@@ -9,11 +9,11 @@ public class Anuncio {
 	private int puntuacion;
 	private boolean relevante;
 	private LocalDate fechaIrrelevante;
-	
+
 	public Anuncio() {
-		
+
 	}
-	
+
 	public void valorarAnuncio() {
 		this.puntuacion = 0;
 		if (this.pictures.size() > 0) {
@@ -29,33 +29,38 @@ public class Anuncio {
 		}
 		// Configuro la relevancia
 		if (this.puntuacion >= Constantes.RELEVANCE_GAP) {
-			this.relevante = true;
-			this.fechaIrrelevante = null;
+			this.setRelevante(true);
+			this.setFechaIrrelevante(null);
 		} else {
-			this.relevante = false;
-			this.fechaIrrelevante = LocalDate.now();
+			this.setRelevante(false);
+			this.setFechaIrrelevante(LocalDate.now());
 		}
 		// Ajusto el maximo de puntuacion
 		if (this.puntuacion > Constantes.POINTS_MAX) {
 			this.puntuacion = Constantes.POINTS_MAX;
 		}
 	}
-	
+
 	public long getId() {
 		return id;
 	}
+
 	public void setId(long id) {
 		this.id = id;
 	}
+
 	public String getDescription() {
 		return description;
 	}
+
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
 	public ArrayList<String> getPictures() {
 		return pictures;
 	}
+
 	public void setPictures(ArrayList<String> pictures) {
 		this.pictures = pictures;
 	}
@@ -67,5 +72,21 @@ public class Anuncio {
 	public void setPuntuacion(int puntuacion) {
 		this.puntuacion = puntuacion;
 	}
-	
+
+	public boolean isRelevante() {
+		return relevante;
+	}
+
+	public void setRelevante(boolean relevante) {
+		this.relevante = relevante;
+	}
+
+	public LocalDate getFechaIrrelevante() {
+		return fechaIrrelevante;
+	}
+
+	public void setFechaIrrelevante(LocalDate fechaIrrelevante) {
+		this.fechaIrrelevante = fechaIrrelevante;
+	}
+
 }
