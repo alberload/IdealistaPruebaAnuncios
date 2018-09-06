@@ -1,0 +1,30 @@
+[{
+"id": 1,
+"description": "Este piso es una ganga, compra, compra, COMPRA!!!!!",
+"pictures": []
+},
+{
+"id": 2,
+"description": "Nuevo ático céntrico recién reformado. No deje pasar la oportunidad y adquiera este ático de lujo",
+"pictures": ["http://www.idealista.com/pictures/2.jpg"]
+},
+{
+"id": 3,
+"description": "",
+"pictures": ["http://www.idealista.com/pictures/3.jpg"]
+},
+{
+
+"id": 4,
+"description": "Ático céntrico muy luminoso y recién reformado, parece nuevo",
+"pictures": ["http://www.idealista.com/pictures/5.jpg"]
+},
+{
+"id": 5,
+"description": "Pisazo",
+"pictures": [
+"http://www.idealista.com/pictures/3.jpg",
+"http://www.idealista.com/pictures/4.jpg"
+]
+}
+]
